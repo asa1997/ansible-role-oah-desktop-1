@@ -1,0 +1,7 @@
+---
+- debug:
+    msg: "oah-reset of oah.desktop"
+- name: purge ubuntu-desktop
+  shell: sudo apt-get purge -y ubuntu-desktop
+- name: install ubuntu-desktop
+  shell: sudo apt-get install -y --no-install-recommends ubuntu-desktop
